@@ -1,4 +1,5 @@
-exports.contactEmailTemplate = ( firstName, lastName) =>{
+
+exports.contactEmailTemplate = (firstName, lastName) => {
     return `<!DOCTYPE html>
     <html lang="en">
     
@@ -45,8 +46,9 @@ exports.contactEmailTemplate = ( firstName, lastName) =>{
     
     <body>
         <div class="container">
-            <a href="https://studynotion-edtech-project.vercel.app"><img class="logo"
-                    src="https://i.ibb.co/7Xyj3PC/logo.png" alt="StudyNotion Logo"></a>
+            <a href="https://studynotion-js.vercel.app">
+                <img class="logo" src="https://res.cloudinary.com/ddnoopjnv/image/upload/v1715430526/Study_Notion/Black_logo_-_no_background_j0hyvz.png" width={80} height={32} alt="surgeTech logo"/>
+            </a>
         </div>
         <div class="message">Contact form Confirmation</div>
         <div class="body">

@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterLink2 } from "../../data/footer-links";
 
-import Logo from "../../assets/Logo/Logo-Full-Light.png";
+import Logo from "../../assets/NewLogo/White logo - no background.png";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaGoogle, FaYoutube, FaTwitter } from "react-icons/fa";
 // import { FontAwesomeIcon } from "font-awesome";
@@ -28,7 +28,7 @@ const Footer = () => {
                     {/* Section 1 */}
                     <div className="lg:w-[50%] flex flexx-wrap flex-row justify-between lg:border-r lg:border-richblack-700 pl-3 lg:pr-5 gap-3">
                         <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
-                            <img src={Logo} alt="Study Notion Logo" />
+                            <img src={Logo} alt="SurgeTech Logo" />
                             <h2 className="text-richblack-50 font-semibold text-base">
                                 Company
                             </h2>
@@ -41,13 +41,14 @@ const Footer = () => {
                                     )
                                 })}
                             </div>
-                            <div className="flex gap-3 text-lg">
+                            <div className="flex gap-3 text-lg ml-0">
                                 <a href="https://www.instagram.com/easygoing_jeet/">
                                     {/* <FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
                                 </a>
                                 <FaGoogle />
                                 <FaTwitter />
                                 <FaYoutube />
+                                <FaFacebook />
                             </div>
                         </div>
                         <div className="w-[48%] lg:w-[30%] mb-7 lg:pl-0">
@@ -142,7 +143,7 @@ const Footer = () => {
                         })}
                     </div>
                     {/* copyright */}
-                    <div className=" text-center">Made With ❤️ Jatin Sahu © 2023 Studynotion_JS</div>
+                    <div className=" text-center">Made With ❤️ Jatin Sahu © 2023 SurgeTech</div>
                 </div>
             </div>
         </div >

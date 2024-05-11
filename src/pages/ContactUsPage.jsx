@@ -9,7 +9,7 @@ const ContactUsPage = () => {
             logo: "💬",
             title: "Chat on us",
             desc: "Our friendly team is here to help.",
-            address: "studynotion0999@gmail.com",
+            address: "surgetech073@gmail.com",
         },
         {
             logo: "🌍",
@@ -21,7 +21,7 @@ const ContactUsPage = () => {
             logo: "📞",
             title: "Call Us",
             desc: "Mon - Fri From 9am to 5pm",
-            address: "+91 9303311160",
+            address: "+91 93031311160",
         }
     ];
     console.log("printing", contactPageData);

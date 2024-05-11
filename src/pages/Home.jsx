@@ -168,7 +168,7 @@ const Home = () => {
                         </div>
                         <div className="flex flex-col gap-10 lg:w-[45%] w-[100%] items-start ">
                             <div className="text-richblack-700 text-[16px]">
-                                The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
+                                The modern SurgeTech is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.
                             </div>
                             <CTAButton active={true} linkto={"/login"}>
                                 <div className="">

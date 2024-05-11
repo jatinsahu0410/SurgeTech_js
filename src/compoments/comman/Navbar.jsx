@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, Outlet, matchPath } from "react-router-dom";
 import { NavbarLinks } from "../../data/navbar-links";
 import { useLocation } from "react-router-dom";
-import Logo from "../../assets/Logo/Logo-Full-Light.png"
+import Logo from "../../assets/NewLogo/White logo - no background.png"
 import { useSelector } from "react-redux";
 import { AiOutlineShoppingCart, AiOutlineDown } from "react-icons/ai";
 import ProfileDropDown from "../core/Auth/ProfileDropDown";
@@ -55,11 +55,11 @@ const Navbar = () => {
     // console.log(matchRoute);
     return (
         <>
-            <div className="flex h-14 items-center justify-center border-b-[0.5px] font-inter border-b-richblack-400 bg-richblack-800 ">
+            <div className="flex h-16 items-center justify-center border-b-[0.5px] font-inter border-b-richblack-400 bg-richblack-800 ">
                 <div className="flex w-11/12 max-w-[1200px] items-center justify-between">
                     {/* image */}
                     <Link to="/">
-                        <img src={Logo} alt="logo" loading="lazy" width={160} height={42} />
+                        <img src={Logo} alt="logo" loading="lazy" width={160} height={38} />
                     </Link>
 
                     {/* nav links */}

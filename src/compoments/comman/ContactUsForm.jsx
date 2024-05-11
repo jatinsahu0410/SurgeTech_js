@@ -96,7 +96,7 @@ const ContactUsForm = () => {
                 <label htmlFor="contactNumber" className="text-lg text-richblack-5">Phone Number<sup className="text-pink-200">*</sup></label>
                 <div className="flex flex-row gap-5 mt-1">
                     {/* dropdown */}
-                    <div className="flex w-[90px] flex-col gap-2">
+                    <div className="flex w-[120px] flex-col gap-2">
                         <select name="dropdown" id="dropdown" {...register("countryCode", { required: true })} className="bg-richblack-800 rounded-xl text-richblack-5 p-3 border-richblack-700 border-b-[1px] ">
                             {
                                 CountryCode.map((element, index) => {

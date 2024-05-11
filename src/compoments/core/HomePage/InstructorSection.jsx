@@ -20,7 +20,7 @@ const InstructorSection = () => {
                         <HighLightText text={"Instructor"} />
                     </div>
                     <p className=" font-medium text-base w-[85%] text-richblack-300 ">
-                        Instructors from around the world teach millions of students on StudyNotion. We provide the tools and skills to teach what you love.
+                        Instructors from around the world teach millions of students on SurgeTech. We provide the tools and skills to teach what you love.
                     </p>
                     <div className="w-fit ">
                         <CTAButton active={true} linkto={"/signup"}>
