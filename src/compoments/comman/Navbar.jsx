@@ -92,7 +92,7 @@ const Navbar = () => {
                                                                     ))
                                                                 }
                                                                 </>
-                                                            ) : (<div>No Course Found</div>)
+                                                            ) : (<div>Sorry! No Course Found</div>)
                                                         }
                                                     </div>
                                                 </div>
