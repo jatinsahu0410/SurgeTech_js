@@ -9,6 +9,7 @@ export const CourseSectionDiaplay = ({ sec, isActive, handleIsActive }) => {
 
     // state of open or close
     const [active, setActive] = useState(false);
+    
     useEffect(() => {
         setActive(isActive?.includes(sec._id))
     }, [isActive])

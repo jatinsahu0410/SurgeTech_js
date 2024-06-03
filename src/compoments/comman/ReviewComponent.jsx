@@ -21,7 +21,7 @@ export const ReviewComponent = () => {
     useEffect(() => {
         const allReviews = async () => {
             const { data } = await apiConnector("GET", ratingEndpoints.REVIEWS_DETAILS_API);
-            console.log("The Response of ALL rEVIEWA", data);
+            // console.log("The Response of ALL rEVIEWA", data);
 
             if (data?.success) {
                 setReview(data?.data);
@@ -30,7 +30,7 @@ export const ReviewComponent = () => {
         allReviews();
     }, [])
 
-    console.log("The review ", review);
+    // console.log("The review ", review);
     return (
         <div className='my-[50px] max-w-maxContentTab lg:max-w-maxContent'>
             <Swiper

@@ -41,6 +41,7 @@ const {
     deleteSubSection,
 } = require("../controller/SubSection");
 
+
 // rating and reviews
 const {
     createRating,
@@ -84,7 +85,6 @@ router.post("/getFullCourseDetails", auth, getFullCourseDetails);
 router.delete("/deleteAllCourses", auth, isInstructor, deleteAllCourses);
 // updated courseProgress
 router.post("/updatedCourseProgress", auth, isStudent, CourseProgressVideo);
-
 /******************************************************************************************************* */
 // router Defined for Admin
 /************************************************** */

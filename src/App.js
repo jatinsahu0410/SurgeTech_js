@@ -27,6 +27,7 @@ import CourseDetailCataPage from "./pages/CourseDetailCataPage";
 import { ViewCoures } from "./pages/ViewCoures";
 import { ViewDetails } from "./compoments/core/View_Coures/ViewDetails";
 import { InstructorDash } from "./compoments/core/DashBoard/InstructorDashboard/InstructorDash";
+import DoubtForum from "./compoments/core/View_Coures/DoubtForum";
 function App() {
 
   const { user } = useSelector((state) => state.profile);
@@ -83,10 +84,16 @@ function App() {
                 <Route path="view-course/:courseId/section/:sectionId/sub-section/:subSectionId"
                   element={<ViewDetails />}
                 />
+                <Route path="/doubt-forum" element={<DoubtForum />} />
                 </>
               ) 
             }
           </Route>
+          {
+            // user?.accountType === ACCOUNT_TYPE.STUDENT && (
+            //   <Route path="/doubt-forum" element={<DoubtForum />} />
+            // )
+          }
         </Route>
 
         <Route

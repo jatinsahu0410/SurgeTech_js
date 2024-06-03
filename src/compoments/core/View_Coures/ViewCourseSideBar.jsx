@@ -39,7 +39,7 @@ export const ViewCourseSideBar = ({ setReviewModel }) => {
         })()
     }, [courseSectionData, courseEntireData, location.pathname])
     return (
-        <div className='flex h-[calc(100vh - 3.5rem)] w-[350px] max-w-[380px] flex-col border-r-[2px] border-r-richblack-700 bg-richblack-800'>
+        <div className='flex h-[calc(100vh - 3.5rem)] w-[300px] max-w-[350px] flex-col border-r-[2px] border-r-richblack-700 bg-richblack-800'>
             {/* top level div */}
             <div className='mx-5 flex flex-col items-start justify-between gap-2 gap-y-3 border-b border-richblack-600 py-5 text-lg font-semibold text-richblack-25'>
                 {/* for buttons and heading */}

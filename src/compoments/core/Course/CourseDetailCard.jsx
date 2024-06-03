@@ -12,9 +12,9 @@ import { addToCart } from '../../../slices/cartSlice';
 const CourseDetailCard = ({ course, setConfirmationModal, handleBuyCourse, handleAddToCart }) => {
 
     const navigate = useNavigate();
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const { user } = useSelector((state) => state.profile);
-    const { token } = useSelector((state) => state.auth);
+    // const { token } = useSelector((state) => state.auth);
 
     const handleShare = () => {
         copy(window.location.href);

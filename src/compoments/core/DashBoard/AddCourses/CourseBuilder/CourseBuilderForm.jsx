@@ -27,9 +27,9 @@ const CourseBuilderForm = () => {
     const submitHandler = async (data) => {
         setLoading(false);
         let result;
-        console.log("The data of the Form", data);
+        // console.log("The data of the Form", data);
         const CourseId = course._id;
-        console.log("the course Id will be", CourseId);
+        // console.log("the course Id will be", CourseId);
         if (editSectionName) {
             // we are Editing the section name
             result = await updateSection(
@@ -49,7 +49,7 @@ const CourseBuilderForm = () => {
 
         // update the values
         if (result) {
-            console.log("The Updated course will be", result)
+            // console.log("The Updated course will be", result)
             dispatch(setCourse(result));
             setEditSectionName(null);
             setValue("sectionName", "")

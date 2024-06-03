@@ -40,7 +40,7 @@ const SubSectionModal = ({
             setValue("lectureVideo", modalData.videoUrl);
             setValue("timeDuration", modalData.timeDuration);
         }
-        console.log("The modal data for view and edit subSection", modalData);
+        // console.log("The modal data for view and edit subSection", modalData);
     }, []);
 
     // is Form Updated
@@ -80,9 +80,9 @@ const SubSectionModal = ({
             formData.append("timeDuration", currentValues.timeDuration)
         }
         setLoading(true);
-        console.log("The video url will be ", modalData.videoUrl);
+        // console.log("The video url will be ", modalData.videoUrl);
         const result = await updateSubSection(formData, token);
-        console.log("The updated SubSection", result);
+        // console.log("The updated SubSection", result);
         if (result) {
             // as the api will return the updated Section and we need to dispatch the setCourse
             const updatedCourseContent = course.courseContent.map((section) => section._id === modalData.sectionId ? result : section)
@@ -184,7 +184,7 @@ const SubSectionModal = ({
                                     placeholder="Enter the video Duration"
                                     className="bg-richblack-600 rounded-xl text-richblack-5 p-3 border-richblack-300 border-b-[1px] w-full"
                                     {...register("timeDuration", { required: true })}
-                                    onClick={() => alert("The total Video Time should be in secs")}
+                                    onClick={() => alert("Please Enter duration in sec")}
                                 />
                                 {
                                     errors.timeDuration && (

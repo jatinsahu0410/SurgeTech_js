@@ -40,7 +40,7 @@ const Home = () => {
                 <div className="mx-3 my-12 max-w-[90%] shadow-[10px_-5px_50px_-5px] shadow-blue-200 rounded-xl ">
                     {/* <div className=" absolute w-[115%] h-[115%] bg-blue-200 blur-md"></div> */}
                     <div>
-                        <video muted loop autoPlay className="rounded-xl shadow-[20px_20px_0_0] shadow-white">
+                        <video muted loop autoPlay className="rounded-xl shadow-[10px_10px_0_0] shadow-blue-200">
                             <source src={Banner} type="video/mp4" />
                         </video>
                     </div>

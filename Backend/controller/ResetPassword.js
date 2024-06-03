@@ -29,7 +29,7 @@ exports.resetPasswordToken = async (req, res) => {
         );
         console.log("DETAILS",updateDetails);
         // create url and send the email containing the url
-        const url = `http://localhost:3000/update-password/${token}`;
+        const url = `https://surgetech-js.vercel.app/update-password/${token}`;
         // send the mail
         await mailSender(email,
             "password generation link",

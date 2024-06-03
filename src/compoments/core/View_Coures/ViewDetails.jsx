@@ -90,7 +90,7 @@ export const ViewDetails = () => {
           />
         ) : (
           <div className='w-[95%] mx-auto border-2 border-richblack-50 shadow-lg shadow-richblack-100 rounded-lg mt-2 '>
-            <ReactPlayer url={videoData?.videoUrl} controls={true}  config={{ file: { attributes: { controlsList: 'nodownload' } } }} height="78vh" width="100%" playsinline={true}  />
+            <ReactPlayer url={videoData?.videoUrl} controls={true} config={{ file: { attributes: { controlsList: 'nodownload' } } }} height="78vh" width="100%" playsinline={true} />
           </div>
         )
       }
@@ -114,9 +114,14 @@ export const ViewDetails = () => {
           )
         }
       </div> */}
-      <div className='p-4 ml-4 mt-6 '>
-        <h2 className='text-3xl font-semibold text-yellow-50'>{videoData?.title}</h2>
-        <p className='pt-2 pb-6'>{videoData?.description}</p>
+      <div className='p-4 ml-4 mt-6 mr-4 mb-2 flex flex-row border-2 border-red justify-between'>
+        <div>
+          <h2 className='text-3xl font-semibold text-yellow-50'>{videoData?.title}</h2>
+          <p className='pt-2 pb-6'>{videoData?.description}</p>
+        </div>
+        <div>
+          <IconBtn text={"Ask Doubt"} onClick={() => navigate("/doubt-forum")}/>
+        </div>
       </div>
     </div>
   )

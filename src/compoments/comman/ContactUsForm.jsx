@@ -21,9 +21,9 @@ const ContactUsForm = () => {
     const submitContact = async (data) => {
         try {
             setLoading(true);
-            console.log("logged Data", data);
-            const result = await apiConnector("POST", CONTACT_US_API, data);
-            console.log("Response by contact api", result);
+            // console.log("logged Data", data);
+            await apiConnector("POST", CONTACT_US_API, data);
+            // console.log("Response by contact api", result);
             setLoading(false);
             toast.success("confirmation Mail sent");
         } catch (error) {
