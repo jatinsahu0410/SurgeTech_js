@@ -29,6 +29,9 @@ import { ViewDetails } from "./compoments/core/View_Coures/ViewDetails";
 import { InstructorDash } from "./compoments/core/DashBoard/InstructorDashboard/InstructorDash";
 import DoubtForum from "./compoments/core/View_Coures/DoubtForum";
 function App() {
+  if(process.env.REACT_APP_SERVER_STATE !== 'PRODUCTION'){
+    console.log = function() {}
+  }
 
   const { user } = useSelector((state) => state.profile);
 
