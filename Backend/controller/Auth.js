@@ -38,7 +38,7 @@ exports.sendOTP = async (req, res) => {
 
         // now we have to make sure that the otp is unique \
         // so we first need to check otp 
-        const result = await OTP.findOne({ otp: otp });
+        let result = await OTP.findOne({ otp: otp });
         // console.log("Result is Generate OTP Func");
         // console.log("OTP", otp);
         // console.log("Result", result);
@@ -53,7 +53,7 @@ exports.sendOTP = async (req, res) => {
         }
 
         // create oject of otp / payload
-        otpPayload = { email, otp }
+        let otpPayload = { email, otp }
 
         // create an entry in db 
         await OTP.create(otpPayload);

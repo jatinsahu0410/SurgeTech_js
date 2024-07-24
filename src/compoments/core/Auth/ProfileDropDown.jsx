@@ -4,13 +4,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { VscDashboard, VscSignOut } from "react-icons/vsc";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { logout } from "../../../services/operations/authAPI";
+import useOnClickOutside from "../../../Hooks/useOnClickOutside";
 
 const ProfileDropDown = () => {
     const { user } = useSelector((state) => state.profile)
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [open, setOpen] = useState(false);
-    const ref = useRef();
+    const ref = useRef(null);
+
+    useOnClickOutside(ref, () => setOpen(true));
 
     return (
         <button className="relative" onClick={() => setOpen(true)}>

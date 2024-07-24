@@ -117,7 +117,7 @@ const Main = () => {
                             </div>
                             {
                                 loading ? (
-                                    <div className='gemini-loader w-[80%]'>
+                                    <div className='gemini-loader w-[80%] border-2 border-r-yellow-50'>
                                         <div></div>
                                         <div></div>
                                         <div></div>
