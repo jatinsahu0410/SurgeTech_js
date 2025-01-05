@@ -69,6 +69,7 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
                 email: userDetails.email,
             },
             handler: function (response) {
+                console.log("The response in handler : ", response);
                 // send Successfull mail
                 sendPaymentSuccessEmail(response, orderResponse.data.data.amount, token)
                 // verify the payment
